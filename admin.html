@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ФитПульс — фитнес-студия: онлайн-запись на групповые тренировки.">
+  <title>Панель администратора — ФитПульс</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ФитПульс</span></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация"></nav>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="container">
+      <h1>Заявки <span class="muted" id="total"></span></h1>
+      <div class="stats" id="stats"></div>
+      <form class="filters" id="filters">
+        <input type="search" id="search" placeholder="Поиск по ФИО или тренировке" aria-label="Поиск">
+        <select id="statusFilter" aria-label="Фильтр по статусу"><option value="">Все статусы</option></select>
+      </form>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>№</th><th>Клиент</th><th>Тренировка</th><th>Дата и время</th><th>Оплата</th><th>Статус</th></tr></thead>
+          <tbody id="adminRows"></tbody>
+        </table>
+      </div>
+      <nav class="pagination" id="pagination" aria-label="Страницы"></nav>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 ФитПульс — студия групповых тренировок</div></footer>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

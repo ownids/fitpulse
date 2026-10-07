@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ФитПульс — фитнес-студия: онлайн-запись на групповые тренировки.">
+  <title>Регистрация — ФитПульс</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ФитПульс</span></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация"></nav>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="container narrow">
+      <div class="panel">
+        <h1>Регистрация</h1>
+        <form id="registerForm" class="form" novalidate>
+          <div class="field"><label for="login">Логин</label><input id="login" name="login" placeholder="латиница и цифры, от 4 символов" required><small class="field__error"></small></div>
+          <div class="field"><label for="password">Пароль</label><input id="password" name="password" type="password" placeholder="не менее 6 символов" required><small class="field__error"></small></div>
+          <div class="field"><label for="full_name">ФИО</label><input id="full_name" name="full_name" placeholder="Иванов Иван Иванович" required><small class="field__error"></small></div>
+          <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="8(XXX)XXX-XX-XX" required><small class="field__error"></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="name@example.com" required><small class="field__error"></small></div>
+          <button class="btn btn--block" type="submit">Зарегистрироваться</button>
+        </form>
+        <p class="muted center">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 ФитПульс — студия групповых тренировок</div></footer>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

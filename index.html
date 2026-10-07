@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ФитПульс — фитнес-студия: онлайн-запись на групповые тренировки.">
+  <title>Главная — ФитПульс</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ФитПульс</span></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация"></nav>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Студия групповых тренировок</p>
+        <h1>Тренируйтесь в&nbsp;удовольствие</h1>
+        <p class="lead">Йога, пилатес, бокс и функциональный тренинг. Запишитесь онлайн за&nbsp;минуту.</p>
+        <div class="hero__actions">
+          <a class="btn btn--lg" href="register.html" id="heroCta">Записаться</a>
+          <a class="btn btn--lg btn--ghost" href="#schedule">Расписание</a>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="schedule">
+      <h2>Направления</h2>
+      <div class="grid" id="trainings"></div>
+    </section>
+    <section class="container">
+      <div class="steps">
+        <div class="step"><span>1</span><p>Зарегистрируйтесь</p></div>
+        <div class="step"><span>2</span><p>Выберите тренировку и время</p></div>
+        <div class="step"><span>3</span><p>Дождитесь подтверждения</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 ФитПульс — студия групповых тренировок</div></footer>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

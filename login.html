@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ФитПульс — фитнес-студия: онлайн-запись на групповые тренировки.">
+  <title>Вход — ФитПульс</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34"><span>ФитПульс</span></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация"></nav>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="container narrow">
+      <div class="panel">
+        <h1>Вход</h1>
+        <div class="alert" id="loginError" role="alert" hidden>Неверный логин или пароль</div>
+        <form id="loginForm" class="form" novalidate>
+          <div class="field"><label for="login">Логин</label><input id="login" name="login" autocomplete="username" required><small class="field__error"></small></div>
+          <div class="field"><label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="current-password" required><small class="field__error"></small></div>
+          <button class="btn btn--block" type="submit">Войти</button>
+        </form>
+        <p class="muted center">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 ФитПульс — студия групповых тренировок</div></footer>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
